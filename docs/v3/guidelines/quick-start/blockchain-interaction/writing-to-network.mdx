@@ -4,7 +4,7 @@ import Button from '@site/src/components/button'
 
 # Writing to the network
 
-In the previous section, you learned how to **read data** from the TON Blockchain. Now, let's explore how to **write data** to it.
+In the previous section, you learned how to **read data** from TON Blockchain. Now, let's explore how to **write data** to it.
 
 ## Introduction
 
@@ -145,9 +145,7 @@ To send an NFT, we should first acquire one. The easiest way to do that is to cr
 The basic operation of the [NFT standard](https://github.com/ton-blockchain/TEPs/blob/master/text/0062-nft-standard.md) in TON is `transfer`. What is actually performed is changing the address of the `owner` in NFT storage to the `new owner`, which is the address of another contract that is now able to perform operations with the `NFT Item`.
 
 :::tip
-
 See [Actors and roles](/v3/guidelines/quick-start/developing-smart-contracts/func-tolk-folder/processing-messages#actors-and-roles) for a more conceptual description.
-
 :::
 
 #### Implementation
